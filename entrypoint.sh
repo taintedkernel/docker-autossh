@@ -23,9 +23,9 @@ echo autossh \
  -o ServerAliveInterval=5 \
  -o ServerAliveCountMax=1 \
  -o "ExitOnForwardFailure yes" \
- -t -t \
  -i ${SSH_KEY_FILE:=/id_rsa} \
  ${SSH_MODE:=-R} ${SSH_TUNNEL_REMOTE}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL} \
+ ${SSH_MODE:=-R} ${SSH_TUNNEL_REMOTE2}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL2} \
  -p ${SSH_HOSTPORT:=22} \
  ${SSH_HOSTUSER}@${SSH_HOSTNAME}
 
@@ -40,8 +40,8 @@ autossh \
  -o ServerAliveInterval=5 \
  -o ServerAliveCountMax=1 \
  -o "ExitOnForwardFailure yes" \
- -t -t \
  -i ${SSH_KEY_FILE:=/id_rsa} \
  ${SSH_MODE:=-R} ${SSH_TUNNEL_REMOTE}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL} \
+ ${SSH_MODE:=-R} ${SSH_TUNNEL_REMOTE2}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL2} \
  -p ${SSH_HOSTPORT:=22} \
  ${SSH_HOSTUSER}@${SSH_HOSTNAME}
