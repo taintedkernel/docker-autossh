@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Anthony DeChiaro <taintedkernel@gmail.com>
+MAINTAINER Anthony DeChiaro <anthony@dechiaro.io>
 
 ARG BUILD_DATE
 ARG VCS_REF
